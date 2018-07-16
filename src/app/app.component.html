@@ -71,8 +71,40 @@
           <td>percent:'3.2-4'</td>
           <td>{{ percentageMin | percent:'3.2-4' }}</td>
         </tr>
+        <tr>
+          <td>{{ shortDecimal }}</td>
+          <td>currency</td>
+          <td>{{ shortDecimal | currency }}</td>
+        </tr>
+        <tr>
+          <td>{{ greeting }}</td>
+          <td>async</td>
+          <td>{{ greeting | async }}</td>
+        </tr>
+        <tr>
+          <td>{{ date }}</td>
+          <td>date</td>
+          <td>{{ date | date }}</td>
+        </tr>
+        <tr>
+          <td>{{ date }}</td>
+          <td>date:'dd/MM/yyyy'</td>
+          <td>{{ date | date:'dd/MM/yyyy' }}</td>
+        </tr>
+        <tr>
+          <td>{{ date }}</td>
+          <td>date:'short'</td>
+          <td>{{ date | date:'short' }}</td>
+        </tr>
+        <tr>
+          <td>{{ title }}</td>
+          <td>capitalizado</td>
+          <td>{{ title | capitalizado }}</td>
+        </tr>
       </tbody>
     </table>
+    <pre>Sin transformar: {{ objeto }}</pre>
+    <pre>Transformado: {{ objeto | json }}</pre>
   </div>
 </body>
 
